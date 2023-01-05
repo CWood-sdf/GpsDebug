@@ -1,0 +1,15 @@
+{
+  "name": "gpsdebug",
+  "version": "1.0.0",
+  "description": "Graphs to debug gps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "GpsDebug"
+  },
+  "author": "CWood-sdf",
+  "license": "ISC"
+}

@@ -60,7 +60,20 @@
             newX += this.x;
             p.line(newX * height, this.y * height, newX * height, (this.y + this.height) * height);;
         } // Line Highlight
-
+        if(this.data.length !== 0){
+            //Show the average value
+            var avg = 0;
+            for (var i of this.data) {
+                avg += i;
+            }
+            avg /= this.data.length;
+            //Draw a line at the average
+            p.stroke(0);
+            p.strokeWeight(1);
+            var newY = rangeMult * avg * -1 + this.range[1] * rangeMult;
+            newY += this.y + this.height;
+            p.line(this.x * height, newY * height, (this.x + this.width) * height, newY * height);
+        } // Average line
         {
             p.stroke(0);
             p.strokeWeight(1);
